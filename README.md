@@ -8,7 +8,7 @@
 
 ### 特别致谢
 
-我们谨向西交利物浦大学陈正教授团队致以最诚挚、最深切的感谢与崇高敬意，并对该团队发表的 IPI 方法学论文表示由衷的万分感谢。该团队的研究工作为我们认识、理解和可视化 IPI 方法提供了重要的学术启发与基础。在此再次向陈正教授及团队全体成员表达衷心谢意。
+我们谨向西交利物浦大学陈正教授团队和袁召锋老师致以最诚挚、最深切的感谢与崇高敬意，并对该团队发表的 IPI 方法学论文表示由衷的万分感谢。该团队的研究工作为我们认识、理解和可视化 IPI 方法提供了重要的学术启发与基础。在此再次向陈正教授及团队全体成员表达衷心谢意。
 
 ### 仓库内容
 
@@ -19,9 +19,7 @@
 在线演示：
 
 - GitHub Pages: <https://liyang-sicnu.github.io/IPI/>
-- Cloudflare Pages: <https://ipi-threejs-visualization.pages.dev/>
-
-本仓库为独立的可视化与归档项目；上述致谢不代表论文作者或其团队对本项目的正式认可或背书。
+- Cloudflare Pages(better): <https://ipi-threejs-visualization.pages.dev/>
 
 ## English
 
@@ -29,7 +27,7 @@ This repository preserves an interactive Three.js visualization of Integrated Po
 
 ### Special Acknowledgment
 
-We extend our deepest and most sincere gratitude, together with our highest respect, to Professor Zheng Chen and his team at Xi'an Jiaotong-Liverpool University. We are profoundly grateful for their published methodological paper on IPI. Their research has provided essential academic inspiration and a valuable foundation for our understanding and visualization of the IPI method. We once again offer our heartfelt thanks to Professor Chen and every member of his team.
+We extend our deepest and most sincere gratitude, together with our highest respect, to Professor Zheng Chen's team and Mr. Zhaofeng Yuan at Xi'an Jiaotong-Liverpool University. We are profoundly grateful for their published methodological paper on IPI. Their research has provided essential academic inspiration and a valuable foundation for our understanding and visualization of the IPI method. We once again offer our heartfelt thanks to Professor Chen and every member of his team.
 
 ### Repository Contents
 
@@ -40,6 +38,5 @@ We extend our deepest and most sincere gratitude, together with our highest resp
 Live demos:
 
 - GitHub Pages: <https://liyang-sicnu.github.io/IPI/>
-- Cloudflare Pages: <https://ipi-threejs-visualization.pages.dev/>
+- Cloudflare Pages(better): <https://ipi-threejs-visualization.pages.dev/>
 
-This is an independent visualization and archival project. The acknowledgment above does not imply formal endorsement of this project by the paper's authors or their team.
