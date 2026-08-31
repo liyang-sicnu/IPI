@@ -1,13 +1,80 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Interactive Three.js visualization of the Integrated Porewater Injection system.">
-  <title>IPI · Three.js Interactive Model</title>
-  <style>html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#eef2f1}iframe{display:block;width:100%;height:100%;border:0}</style>
-</head>
-<body>
-  <iframe src="https://ipi-threejs-visualization.pages.dev/" title="IPI Three.js Interactive Model" allow="fullscreen" loading="eager"></iframe>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Interactive Three.js visualization of the Integrated Porewater Injection system." />
+    <meta property="og:title" content="IPI · Three.js Interactive Visualization" />
+    <meta property="og:description" content="Explore the Integrated Porewater Injection system in an interactive WebGL scene." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IPI · Three.js Interactive Visualization" />
+    <meta name="twitter:description" content="Explore the Integrated Porewater Injection system in an interactive WebGL scene." />
+    <meta name="twitter:image" content="./og.png" />
+    <title>IPI · Three.js Interactive Model</title>
+    <script type="module" crossorigin src="./assets/index-BumJkH16.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D5GEJv6J.css">
+  </head>
+  <body>
+    <main id="stage" aria-label="Interactive 3D model of the IPI system"></main>
+
+    <header class="titlebar">
+      <div>
+        <p class="eyebrow">INTEGRATED POREWATER INJECTION</p>
+        <h1>IPI <span data-i18n="subtitle">Three.js Interactive Model</span></h1>
+      </div>
+      <div class="top-actions">
+        <div id="status" class="status">Loading 3D model…</div>
+        <button id="languageButton" class="language-button" type="button" aria-label="Switch language">中文</button>
+      </div>
+    </header>
+
+    <aside class="panel">
+      <section>
+        <p class="section-title" data-i18n="presetsTitle">DISPLAY PRESETS</p>
+        <div class="preset-grid">
+          <button class="preset active" data-preset="scientific" data-i18n="presetScientific">Scientific</button>
+          <button class="preset" data-preset="warm" data-i18n="presetWarm">Warm</button>
+          <button class="preset" data-preset="contrast" data-i18n="presetContrast">Contrast</button>
+        </div>
+      </section>
+
+      <section>
+        <p class="section-title" data-i18n="materialsTitle">MATERIALS</p>
+        <label class="color-row"><span><i class="dot soil"></i><span data-i18n="soil">Packed soil</span></span><input id="soilColor" type="color" value="#6f3f1f" aria-label="Packed soil color" data-i18n-aria="soilAria" /></label>
+        <label class="color-row"><span><i class="dot water"></i><span data-i18n="waterPhase">Water phase</span></span><input id="waterColor" type="color" value="#36a9d8" aria-label="Water phase color" data-i18n-aria="waterAria" /></label>
+        <label class="color-row"><span><i class="dot acrylic"></i><span data-i18n="acrylic">Acrylic edges</span></span><input id="acrylicColor" type="color" value="#a9dce9" aria-label="Acrylic edge color" data-i18n-aria="acrylicAria" /></label>
+        <label class="color-row"><span><i class="dot rubber"></i><span data-i18n="fittings">Blue fittings</span></span><input id="rubberColor" type="color" value="#1769aa" aria-label="Blue fitting color" data-i18n-aria="fittingsAria" /></label>
+        <label class="color-row"><span><i class="dot lamp"></i><span data-i18n="xenon">Xenon light</span></span><input id="lampColor" type="color" value="#ffad45" aria-label="Xenon light color" data-i18n-aria="xenonAria" /></label>
+      </section>
+
+      <section>
+        <p class="section-title" data-i18n="appearanceTitle">APPEARANCE</p>
+        <label class="range-row"><span data-i18n="shellOpacity">Shell opacity</span><output id="shellOut">6%</output><input id="shellOpacity" type="range" min="2" max="50" value="6" aria-label="Shell opacity" data-i18n-aria="shellOpacity" /></label>
+        <label class="range-row"><span data-i18n="waterVisibility">Water visibility</span><output id="waterOut">43%</output><input id="waterOpacity" type="range" min="12" max="78" value="43" aria-label="Water visibility" data-i18n-aria="waterVisibility" /></label>
+        <label class="range-row"><span data-i18n="exposure">Exposure</span><output id="exposureOut">82%</output><input id="exposure" type="range" min="55" max="130" value="82" aria-label="Exposure" data-i18n-aria="exposure" /></label>
+      </section>
+
+      <section>
+        <p class="section-title" data-i18n="viewTitle">VIEW</p>
+        <div class="view-grid">
+          <button data-view="hero" data-i18n="viewPerspective">Perspective</button>
+          <button data-view="front" data-i18n="viewFront">Front</button>
+          <button data-view="top" data-i18n="viewTop">Top</button>
+          <button id="spinButton" data-i18n="autoRotate">Auto rotate</button>
+        </div>
+      </section>
+
+      <button id="saveButton" class="save" data-i18n="exportPng">Export Current View as PNG</button>
+      <p class="hint" data-i18n="hint">Drag to rotate · Scroll to zoom · Right-drag to pan</p>
+    </aside>
+
+    <div class="legend">
+      <span><b class="legend-line water-line"></b><span data-i18n="legendWater">Water</span></span>
+      <span><b class="legend-line soil-line"></b><span data-i18n="legendSoil">Soil</span></span>
+      <span><b class="legend-line light-line"></b><span data-i18n="legendLight">Light</span></span>
+    </div>
+
+  </body>
 </html>
