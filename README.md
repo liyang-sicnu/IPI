@@ -16,10 +16,7 @@
 - `IPI-blender.py`：与源文件对应的 Blender Python 建模脚本，按当时的建模环境原样保存。
 - `index.html`、`assets/` 和 `IPI.glb`：Three.js 交互式网页版本。
 
-在线演示：
-
-- GitHub Pages: <https://liyang-sicnu.github.io/IPI/>
-- Cloudflare Pages(better): <https://ipi-threejs-visualization.pages.dev/>
+在线演示：<https://ipi-threejs-visualization.pages.dev/>
 
 ## English
 
@@ -35,8 +32,4 @@ We extend our deepest and most sincere gratitude, together with our highest resp
 - `IPI-blender.py`: the corresponding Blender Python modeling script, preserved as used in the original modeling environment.
 - `index.html`, `assets/`, and `IPI.glb`: the interactive Three.js web version.
 
-Live demos:
-
-- GitHub Pages: <https://liyang-sicnu.github.io/IPI/>
-- Cloudflare Pages(better): <https://ipi-threejs-visualization.pages.dev/>
-
+Live demo: <https://ipi-threejs-visualization.pages.dev/>
